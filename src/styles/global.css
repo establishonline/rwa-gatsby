@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	a {
+		@apply text-green;
+	}
+}
+
+@layer components {
+	.row {
+		@apply flex flex-wrap -mx-4;
+	}
+
+	.tab-active {
+		@apply border-green text-white !important;
+	}
+
+	.tab-content-active {
+		@apply relative opacity-100 pointer-events-auto !important;
+	}
+}

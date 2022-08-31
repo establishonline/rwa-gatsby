@@ -1,14 +1,31 @@
 module.exports = {
-  siteMetadata: {
-    title: `RWA`,
-    siteUrl: `https://www.yourdomain.tld`
-  },
-  plugins: ["gatsby-plugin-image", "gatsby-plugin-sitemap", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
-    resolve: 'gatsby-source-filesystem',
-    options: {
-      "name": "images",
-      "path": "./src/images/"
-    },
-    __key: "images"
-  }]
+	siteMetadata: {
+		title: `R Wadhwa & Associates`,
+		description: `A 360 degree financial solution!`,
+		image: `/logo-icon.jpg`,
+		siteUrl: `https://www.rwadhwaandassociates.com`,
+	},
+	plugins: [
+		"gatsby-plugin-postcss",
+		"gatsby-plugin-image",
+		"gatsby-plugin-sitemap",
+		"gatsby-plugin-sharp",
+		"gatsby-transformer-sharp",
+		{
+			resolve: "gatsby-source-filesystem",
+			options: {
+				name: "images",
+				path: "./src/images/",
+			},
+			__key: "images",
+		},
+		{
+			resolve: "gatsby-plugin-react-svg",
+			options: {
+				rule: {
+					include: /\.inline\.svg$/,
+				},
+			},
+		},
+	],
 };
