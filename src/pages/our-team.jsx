@@ -73,3 +73,10 @@ const Team = () => {
 };
 
 export default Team;
+
+export const Head = () => (
+	<SEO
+		title='Our Team'
+		description='Meet the people behind R Wadhwa &amp; Associates'
+	/>
+);

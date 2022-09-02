@@ -64,3 +64,10 @@ const AboutPage = () => {
 };
 
 export default AboutPage;
+
+export const Head = () => (
+	<SEO
+		title='About Us'
+		description='Learn about R Wadhwa &amp; Associates and what got them started'
+	/>
+);

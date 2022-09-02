@@ -92,3 +92,10 @@ const ContactPage = () => {
 };
 
 export default ContactPage;
+
+export const Head = () => (
+	<SEO
+		title='Contact Us'
+		description='Get in touch with us and we will figure out how best to help you'
+	/>
+);

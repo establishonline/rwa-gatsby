@@ -253,3 +253,7 @@ const PrivacyPolicy = () => {
 };
 
 export default PrivacyPolicy;
+
+export const Head = () => (
+	<SEO title='Privacy Policy' description='Your privacy is important to us!' />
+);
