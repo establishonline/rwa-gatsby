@@ -1,6 +1,7 @@
 import React from "react";
 
 import Layout from "../components/layout";
+import { SEO } from "../components/seo";
 import Form from "../components/appointment-form";
 import Card from "../components/card";
 import ArrowButtonA from "../components/arrow-button-a";
