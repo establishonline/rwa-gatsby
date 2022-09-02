@@ -3,8 +3,7 @@ import React from "react";
 import Layout from "../components/layout";
 import Form from "../components/appointment-form";
 import Card from "../components/card";
-
-import GreenArrow from "../images/green-arrow.inline.svg";
+import ArrowButtonA from "../components/arrow-button-a";
 
 const ContactPage = () => {
 	return (
@@ -12,7 +11,7 @@ const ContactPage = () => {
 			<section className='py-16 bg-black rounded-tl-10xl'>
 				<div className='container'>
 					<div className='row justify-center'>
-						<div className='py-12 basis-full max-w-full shrink-0 md:basis-8/12 md:max-w-8/12 lg:basis-5/12 lg:max-w-5/12'>
+						<div className='py-12 pl-12 pr-8 md:pl-0 md:pr-0 basis-full max-w-full shrink-0 md:basis-8/12 md:max-w-8/12 lg:basis-5/12 lg:max-w-5/12'>
 							<h2 className='text-3xl text-center text-white font-bold mb-8'>
 								Request an Appointment
 							</h2>
@@ -21,10 +20,10 @@ const ContactPage = () => {
 					</div>
 				</div>
 			</section>
-			<section className='bg-light_gray py-32'>
+			<section className='py-16 md:py-24 lg:py-32 bg-light_gray'>
 				<div className='container'>
 					<div className='row justify-evenly'>
-						<div className='basis-5/12 max-w-5/12 shrink-0'>
+						<div className='basis-full max-w-full lg:basis-5/12 lg:max-w-5/12 shrink-0 mb-16 lg:mb-0'>
 							<Card color='white' radius='tl'>
 								<h2 className='text-blue text-2xl font-bold mt-8 mr-2 mb-4'>
 									Visit Us
@@ -34,39 +33,30 @@ const ContactPage = () => {
 									<p>
 										G19/3, First Floor, DLF Phase 1, Gurgaon, Haryana - 122002
 									</p>
-									<a
-										href='https://goo.gl/maps/Df2JJoYUB9VBfQbHA'
-										className='text-blue font-bold flex items-center mt-2 mr-4'
-										target='_blank'
-										rel='noreferrer'>
-										Get Directions <GreenArrow className='ml-2 w-6 h-6' />
-									</a>
+									<ArrowButtonA
+										to='https://goo.gl/maps/Df2JJoYUB9VBfQbHA'
+										content='Get Directions'
+									/>
 								</div>
 								<div className='mb-6'>
 									<h4 className='font-bold'>Delhi Office:</h4>
 									<p>Wadhwa Plaza, Sector-6, Dwarka, New Delhi - 110045</p>
-									<a
-										href='https://goo.gl/maps/g5qFKETooVV1DaS17'
-										className='text-blue font-bold flex items-center mt-2 mr-4'
-										target='_blank'
-										rel='noreferrer'>
-										Get Directions <GreenArrow className='ml-2 w-6 h-6' />
-									</a>
+									<ArrowButtonA
+										to='https://goo.gl/maps/g5qFKETooVV1DaS17'
+										content='Get Directions'
+									/>
 								</div>
 								<div className='mb-6'>
 									<h4 className='font-bold'>Sonepat Office:</h4>
 									<p>1065, Sector-14, Sonepat, Haryana - 131001</p>
-									<a
-										href='https://goo.gl/maps/p5sLEGHRqn6sJdDb6'
-										className='text-blue font-bold flex items-center mt-2 mr-4'
-										target='_blank'
-										rel='noreferrer'>
-										Get Directions <GreenArrow className='ml-2 w-6 h-6' />
-									</a>
+									<ArrowButtonA
+										to='https://goo.gl/maps/p5sLEGHRqn6sJdDb6'
+										content='Get Directions'
+									/>
 								</div>
 							</Card>
 						</div>
-						<div className='basis-5/12 max-w-5/12 shrink-0'>
+						<div className='basis-full max-w-full lg:basis-5/12 lg:max-w-5/12 shrink-0'>
 							<Card color='white' radius='br'>
 								<h2 className='text-blue text-2xl font-bold mt-8 mr-2 mb-4'>
 									Call Us

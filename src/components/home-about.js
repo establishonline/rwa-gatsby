@@ -1,7 +1,6 @@
 import React from "react";
-import { Link } from "gatsby";
 
-import GreenArrow from "../images/green-arrow.inline.svg";
+import ArrowButton from "./arrow-button";
 import OurTeam from "../images/our-team.inline.svg";
 import WhoWeAre from "../images/who-we-are.inline.svg";
 import Card from "./card";
@@ -11,9 +10,9 @@ const HomeAbout = () => {
 		<section className='bg-light_gray py-32'>
 			<div className='container'>
 				<div className='row justify-evenly'>
-					<div className='basis-5/12 max-w-5/12 shrink-0'>
+					<div className='basis-full max-w-full lg:basis-5/12 lg:max-w-5/12 shrink-0 mb-16 lg:mb-0'>
 						<Card color='white' radius='tl'>
-							<WhoWeAre className='m-auto' />
+							<WhoWeAre className='m-auto max-w-[200px] w-full' />
 							<h2 className='text-center text-green text-2xl font-bold mt-8 mx-2 mb-4'>
 								Who We Are
 							</h2>
@@ -23,16 +22,16 @@ const HomeAbout = () => {
 								The firm also provides a gamut of services like accounting,
 								auditing, financial services and much more.
 							</p>
-							<Link
+							<ArrowButton
 								to='/about/'
-								className='text-blue text-xl font-bold flex items-center justify-end mt-4 mr-4'>
-								Read More <GreenArrow className='ml-4' />
-							</Link>
+								content='Read More'
+								buttonClasses='justify-end mr-4'
+							/>
 						</Card>
 					</div>
-					<div className='basis-5/12 max-w-5/12 shrink-0'>
+					<div className='basis-full max-w-full lg:basis-5/12 lg:max-w-5/12 shrink-0'>
 						<Card color='white' radius='br'>
-							<OurTeam className='m-auto' />
+							<OurTeam className='m-auto max-w-[200px] w-full' />
 							<h2 className='text-center text-green text-2xl font-bold mt-8 mx-2 mb-4'>
 								Our Team
 							</h2>
@@ -42,11 +41,11 @@ const HomeAbout = () => {
 								ways and make sure to handle all matters in a prompt and
 								effective manner.
 							</p>
-							<Link
-								to='/about/'
-								className='text-blue text-xl font-bold flex items-center justify-end mt-4 mr-4'>
-								Read More <GreenArrow className='ml-4' />
-							</Link>
+							<ArrowButton
+								to='/our-team/'
+								content='Read More'
+								buttonClasses='justify-end mr-4'
+							/>
 						</Card>
 					</div>
 				</div>

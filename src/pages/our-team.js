@@ -6,11 +6,11 @@ import Tabs from "../components/tabs";
 const Team = () => {
 	return (
 		<Layout>
-			<section id='services' className='py-16 bg-black rounded-tr-10xl'>
+			<section id='services' className='py-16 px-8 bg-black rounded-tr-10xl'>
 				<div className='container'>
 					<div className='row'>
 						<div className='basis-full max-w-full shrink-0 py-12'>
-							<h2 className='text-5xl font-bold text-white leading-tight'>
+							<h2 className='text-4xl lg:text-5xl font-bold text-white leading-tight'>
 								Meet Our,
 								<br />
 								Leadership Team

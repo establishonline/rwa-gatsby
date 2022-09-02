@@ -14,8 +14,8 @@ const Form = ({ bg, text }) => {
 						Don't fill this out if you're human: <input name='bot-field' />
 					</label>
 				</div>
-				<div className='flex mt-4'>
-					<span className='flex flex-col basis-full max-w-full md:basis-6/12 md:max-w-6/12'>
+				<div className='flex flex-col md:flex-row mt-4'>
+					<span className='flex flex-col basis-full max-w-full md:basis-6/12 md:max-w-6/12 mb-4 md:mb-0'>
 						<input
 							className={`border-b-2 border-solid border-${text} mr-6 bg-${bg}`}
 							type='text'
@@ -42,8 +42,8 @@ const Form = ({ bg, text }) => {
 						</label>
 					</span>
 				</div>
-				<div className='flex mt-4'>
-					<span className='flex flex-col basis-full max-w-full md:basis-6/12 md:max-w-6/12'>
+				<div className='flex flex-col md:flex-row mt-4'>
+					<span className='flex flex-col basis-full max-w-full md:basis-6/12 md:max-w-6/12 mb-4 md:mb-0'>
 						<input
 							className={`border-b-2 border-solid border-${text} mr-6 bg-${bg}`}
 							type='email'
@@ -66,7 +66,7 @@ const Form = ({ bg, text }) => {
 						</label>
 					</span>
 				</div>
-				<div className='flex mt-4'>
+				<div className='flex flex-col md:flex-row mt-4'>
 					<span className='flex flex-col basis-full max-w-full'>
 						<textarea
 							className={`border-b-2 border-solid border-${text} mr-6 bg-${bg}`}

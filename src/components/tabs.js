@@ -34,8 +34,8 @@ class Tabs extends Component {
 
 		return (
 			<div className='row'>
-				<div className='basis-2/12 max-w-2/12 shrink-0'>
-					<ul>
+				<div className='basis-full max-w-full lg:basis-2/12 lg:max-w-2/12 shrink-0'>
+					<ul className='flex lg:block flex-nowrap mb-4 lg:mb-0 overflow-auto'>
 						{children.map((child, i) => {
 							const { label } = child.props;
 
@@ -52,7 +52,7 @@ class Tabs extends Component {
 						})}
 					</ul>
 				</div>
-				<div className='basis-10/12 max-w-10/12 shrink-0'>
+				<div className='basis-full max-w-full lg:basis-10/12 lg:max-w-10/12 shrink-0'>
 					<div className='relative text-white border-t-2 border-white py-8 child:mb-4'>
 						{children.map((child) => {
 							if (child.props.label !== activeTab) return undefined;

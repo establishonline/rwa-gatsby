@@ -5,7 +5,7 @@ import Layout from "../components/layout";
 const AboutPage = () => {
 	return (
 		<Layout pageTitle='Homepage'>
-			<section className="bg-[url('../images/about-page-banner.jpg')] relative bg-right">
+			<section className="bg-[url('../images/about-page-banner.jpg')] bg-cover bg-no-repeat relative bg-right">
 				<div className='absolute h-full w-full z-0'>
 					<div className='row h-full'>
 						<div className='rounded-tr-10xl bg-white mt-48 basis-full max-w-full shrink-0 md:basis-9/12 md:max-w-9/12'></div>
@@ -14,7 +14,7 @@ const AboutPage = () => {
 				<div className='container relative z-10'>
 					<div className='row'>
 						<div className='mt-48 basis-full max-w-full shrink-0 md:basis-9/12 md:max-w-9/12'>
-							<div className='p-16'>
+							<div className='p-8 lg:p-16'>
 								<h1 className='mb-4 text-5xl text-blue font-bold'>
 									Get to know us
 								</h1>

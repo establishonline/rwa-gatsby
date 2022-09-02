@@ -27,7 +27,7 @@ class Tab extends Component {
 		} = this;
 
 		let className =
-			"py-6 px-4 border-l-4 border-gray text-gray text-xl font-bold cursor-pointer";
+			"py-4 lg:py-6 px-6 lg:px-4 border-t-4 lg:border-t-0 lg:border-l-4 border-gray text-gray text-xl font-bold cursor-pointer whitespace-nowrap lg:whitespace-normal";
 
 		if (activeTab === label) {
 			className += " tab-active";
