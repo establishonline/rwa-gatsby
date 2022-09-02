@@ -33,11 +33,7 @@ class Tab extends Component {
 		}
 
 		return (
-			<li
-				role='none'
-				className={className}
-				onClick={onClick}
-				onKeyDown={onKeyDown}>
+			<li className={className} onClick={onClick} onKeyDown={onKeyDown}>
 				{label}
 			</li>
 		);
