@@ -4,7 +4,6 @@ import PropTypes from "prop-types";
 class Tab extends Component {
 	static propTypes = {
 		activeTab: PropTypes.string.isRequired,
-		tabIndex: PropTypes.number.isRequired,
 		label: PropTypes.string.isRequired,
 		onClick: PropTypes.func.isRequired,
 	};
@@ -23,7 +22,7 @@ class Tab extends Component {
 		const {
 			onClick,
 			onKeyDown,
-			props: { activeTab, tabIndex, label },
+			props: { activeTab, label },
 		} = this;
 
 		let className =
@@ -36,7 +35,6 @@ class Tab extends Component {
 		return (
 			<li
 				role='none'
-				tabIndex={tabIndex}
 				className={className}
 				onClick={onClick}
 				onKeyDown={onKeyDown}>

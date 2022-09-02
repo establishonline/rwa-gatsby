@@ -42,7 +42,6 @@ class Tabs extends Component {
 							return (
 								<Tab
 									activeTab={activeTab}
-									tabIndex={i}
 									key={label}
 									label={label}
 									onClick={onClickTabItem}
