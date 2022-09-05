@@ -1,49 +1,41 @@
-import * as React from "react"
-import { Link } from "gatsby"
+import * as React from "react";
 
-const pageStyles = {
-  color: "#232129",
-  padding: "96px",
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-}
+import Layout from "../components/layout";
+import { SEO } from "../components/seo";
+import ArrowButton from "../components/arrow-button";
 
-const paragraphStyles = {
-  marginBottom: 48,
-}
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-}
+import NotFound from "../images/not-found.inline.svg";
 
-const NotFoundPage = () => {
-  return (
-    <main style={pageStyles}>
-      <h1 style={headingStyles}>Page not found</h1>
-      <p style={paragraphStyles}>
-        Sorry 😔, we couldn’t find what you were looking for.
-        <br />
-        {process.env.NODE_ENV === "development" ? (
-          <>
-            <br />
-            Try creating a page in <code style={codeStyles}>src/pages/</code>.
-            <br />
-          </>
-        ) : null}
-        <br />
-        <Link to="/">Go home</Link>.
-      </p>
-    </main>
-  )
-}
+const PageNotFound = () => {
+	return (
+		<Layout>
+			<div>
+				<NotFound className='w-full' />
+			</div>
+			<div className='container p-8'>
+				<div className='row'>
+					<div className='basis-full max-w-full shrink-0 text-center'>
+						<h1 className='text-9xl font-bold pt-4 pb-8'>404</h1>
+						<h2 className='text-3xl font-bold pb-2'>
+							Uh oh! I think you're lost.
+						</h2>
+						<p className='text-xl'>
+							it looks like the page you're looking for doesn't exist
+						</p>
+						<ArrowButton
+							to='/'
+							content='Go back home'
+							buttonClasses='justify-center'
+						/>
+					</div>
+				</div>
+			</div>
+		</Layout>
+	);
+};
 
-export default NotFoundPage
+export default PageNotFound;
 
-export const Head = () => <title>Not found</title>
+export const Head = () => (
+	<SEO title='Page Not Found' description="Oops! We couldn't find that page!" />
+);

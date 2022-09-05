@@ -24,7 +24,7 @@ const HomeAbout = () => {
 							</p>
 							<ArrowButton
 								to='/about/'
-								content='Learn More'
+								content='Read Our Story'
 								buttonClasses='justify-end mr-4'
 							/>
 						</Card>
