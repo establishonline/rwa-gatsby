@@ -22,11 +22,13 @@ const HomeAbout = () => {
 								The firm also provides a gamut of services like accounting,
 								auditing, financial services and much more.
 							</p>
-							<ArrowButton
-								to='/about/'
-								content='Read Our Story'
-								buttonClasses='justify-end mr-4'
-							/>
+							<div className='text-right'>
+								<ArrowButton
+									to='/about/'
+									content='Read Our Story'
+									buttonClasses='mr-4'
+								/>
+							</div>
 						</Card>
 					</div>
 					<div className='basis-full max-w-full lg:basis-5/12 lg:max-w-5/12 shrink-0'>
@@ -41,11 +43,13 @@ const HomeAbout = () => {
 								ways and make sure to handle all matters in a prompt and
 								effective manner.
 							</p>
-							<ArrowButton
-								to='/our-team/'
-								content='Meet our Team'
-								buttonClasses='justify-end mr-4'
-							/>
+							<div className='text-right'>
+								<ArrowButton
+									to='/our-team/'
+									content='Meet our Team'
+									buttonClasses='mr-4'
+								/>
+							</div>
 						</Card>
 					</div>
 				</div>

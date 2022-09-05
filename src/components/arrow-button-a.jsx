@@ -6,7 +6,7 @@ const ArrowButtonA = ({ to, content, buttonClasses, iconClasses }) => {
 	return (
 		<a
 			href={to}
-			className={`text-blue hover:text-green text-base font-bold flex items-center mt-2 mr-4 fill-green hover:fill-blue duration-500 ${buttonClasses}`}
+			className={`text-blue hover:text-green text-base font-bold inline-flex items-center mt-2 mr-4 fill-green hover:fill-blue duration-500 ${buttonClasses}`}
 			target='_blank'
 			rel='noreferrer'>
 			{content}

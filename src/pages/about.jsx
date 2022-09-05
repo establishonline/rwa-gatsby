@@ -2,6 +2,7 @@ import React from "react";
 
 import Layout from "../components/layout";
 import { SEO } from "../components/seo";
+import ArrowButton from "../components/arrow-button";
 
 const AboutPage = () => {
 	return (
@@ -55,6 +56,7 @@ const AboutPage = () => {
 										and provide them with best possible solutions.
 									</p>
 								</div>
+								<ArrowButton to='/our-team/' content='Meet our Team' />
 							</div>
 						</div>
 					</div>
