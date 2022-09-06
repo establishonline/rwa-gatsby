@@ -35,7 +35,7 @@ const AppointmentForm = ({ bg, text }) => {
 				fetch("/", {
 					method: "POST",
 					headers: { "Content-Type": "application/x-www-form-urlencoded" },
-					body: encode({ "form-name": "request_appointment_alt", ...values }),
+					body: encode({ "form-name": "request_appointment", ...values }),
 				})
 					.then(() => {
 						successClasses += " !block";
@@ -51,7 +51,7 @@ const AppointmentForm = ({ bg, text }) => {
 			}}>
 			{() => (
 				<Form
-					name='request_appointment_alt'
+					name='request_appointment'
 					data-netlify='true'
 					data-netlify-honeypot='bot-field'>
 					<Field type='hidden' name='form-name' />
