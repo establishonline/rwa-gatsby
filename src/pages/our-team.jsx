@@ -10,7 +10,7 @@ const Team = () => {
 			<section id='services' className='py-16 px-8 bg-black rounded-tr-10xl'>
 				<div className='container'>
 					<div className='row'>
-						<div className='basis-full max-w-full shrink-0 py-12'>
+						<div className='basis-full max-w-full shrink-0 py-12 px-4'>
 							<h2 className='text-4xl lg:text-5xl font-bold text-white leading-tight'>
 								Meet Our,
 								<br />

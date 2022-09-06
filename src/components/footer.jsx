@@ -15,7 +15,7 @@ const Footer = () => {
 							alt='Logo of R. Wadhwa &amp; Associates'
 						/>
 					</div>
-					<div className='basis-full max-w-full md:basis-7/12 md:max-w-7/12 shrink-0 flex items-center'>
+					<div className='basis-full max-w-full md:basis-7/12 md:max-w-7/12 shrink-0 flex items-center px-4'>
 						<div className='w-full'>
 							<div className='border-b-2 border-black border-solid'>
 								<nav className='py-4 flex md:block justify-center md:justify-start'>

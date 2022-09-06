@@ -12,7 +12,7 @@ const Hero = () => {
 			</div>
 			<div className='container relative z-10'>
 				<div className='row'>
-					<div className='mt-48 basis-full max-w-full shrink-0 md:basis-9/12 md:max-w-9/12 lg:basis-7/12 lg:max-w-7/12'>
+					<div className='mt-48 basis-full max-w-full shrink-0 md:basis-9/12 md:max-w-9/12 lg:basis-7/12 lg:max-w-7/12 px-4'>
 						<div className='p-8 lg:p-16'>
 							<h1 className='mb-4 text-4xl lg:text-5xl text-blue font-bold'>
 								A 360&deg; Financial Solution

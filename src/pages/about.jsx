@@ -15,7 +15,7 @@ const AboutPage = () => {
 				</div>
 				<div className='container relative z-10'>
 					<div className='row'>
-						<div className='mt-48 basis-full max-w-full shrink-0 md:basis-9/12 md:max-w-9/12'>
+						<div className='mt-48 basis-full max-w-full shrink-0 px-4 md:basis-9/12 md:max-w-9/12'>
 							<div className='p-8 lg:p-16'>
 								<h1 className='mb-4 text-5xl text-blue font-bold'>
 									Get to know us

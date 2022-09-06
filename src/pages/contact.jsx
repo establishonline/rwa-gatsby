@@ -24,7 +24,7 @@ const ContactPage = () => {
 			<section className='py-16 md:py-24 lg:py-32 bg-light_gray'>
 				<div className='container'>
 					<div className='row justify-evenly'>
-						<div className='basis-full max-w-full lg:basis-5/12 lg:max-w-5/12 shrink-0 mb-16 lg:mb-0'>
+						<div className='basis-full max-w-full px-4 lg:basis-5/12 lg:max-w-5/12 shrink-0 mb-16 lg:mb-0'>
 							<Card color='white' radius='tl'>
 								<h2 className='text-blue text-2xl font-bold mt-8 mr-2 mb-4'>
 									Visit Us
@@ -57,7 +57,7 @@ const ContactPage = () => {
 								</div>
 							</Card>
 						</div>
-						<div className='basis-full max-w-full lg:basis-5/12 lg:max-w-5/12 shrink-0'>
+						<div className='basis-full max-w-full px-4 lg:basis-5/12 lg:max-w-5/12 shrink-0'>
 							<Card color='white' radius='br'>
 								<h2 className='text-blue text-2xl font-bold mt-8 mr-2 mb-4'>
 									Call Us

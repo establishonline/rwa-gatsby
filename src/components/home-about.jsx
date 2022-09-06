@@ -10,7 +10,7 @@ const HomeAbout = () => {
 		<section className='bg-light_gray py-32'>
 			<div className='container'>
 				<div className='row justify-evenly'>
-					<div className='basis-full max-w-full lg:basis-5/12 lg:max-w-5/12 shrink-0 mb-16 lg:mb-0'>
+					<div className='basis-full max-w-full lg:basis-5/12 lg:max-w-5/12 shrink-0 mb-16 lg:mb-0 px-4'>
 						<Card color='white' radius='tl'>
 							<WhoWeAre className='m-auto max-w-[200px] w-full' />
 							<h2 className='text-center text-green text-2xl font-bold mt-8 mx-2 mb-4'>
@@ -31,7 +31,7 @@ const HomeAbout = () => {
 							</div>
 						</Card>
 					</div>
-					<div className='basis-full max-w-full lg:basis-5/12 lg:max-w-5/12 shrink-0'>
+					<div className='basis-full max-w-full lg:basis-5/12 lg:max-w-5/12 shrink-0 px-4'>
 						<Card color='white' radius='br'>
 							<OurTeam className='m-auto max-w-[200px] w-full' />
 							<h2 className='text-center text-green text-2xl font-bold mt-8 mx-2 mb-4'>

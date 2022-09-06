@@ -9,7 +9,7 @@ const PrivacyPolicy = () => {
 			<section className='mt-16'>
 				<div className='container'>
 					<div className='row'>
-						<div className='basis-full max-w-full shrink-0'>
+						<div className='basis-full max-w-full shrink-0 px-4'>
 							<div className='child:mb-4'>
 								<h1 className='text-2xl text-blue font-bold'>
 									Privacy Policy for R. Wadhwa &amp; Associates

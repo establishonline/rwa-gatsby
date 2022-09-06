@@ -14,7 +14,7 @@ const PageNotFound = () => {
 			</div>
 			<div className='container p-8'>
 				<div className='row'>
-					<div className='basis-full max-w-full shrink-0 text-center'>
+					<div className='basis-full max-w-full shrink-0 px-4 text-center'>
 						<h1 className='text-9xl font-bold pt-4 pb-8'>404</h1>
 						<h2 className='text-3xl font-bold pb-2'>
 							Uh oh! I think you're lost.
