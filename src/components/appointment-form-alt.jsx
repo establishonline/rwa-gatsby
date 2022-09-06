@@ -24,6 +24,9 @@ const FormSchema = Yup.object().shape({
 });
 
 const AltForm = ({ bg, text }) => {
+	let successClasses =
+		"mr-6 my-4 p-2 text-sm bg-success-300 text-success-900 hidden";
+
 	return (
 		<Formik
 			initialValues={{ fullName: "", email: "", phone: "", message: "" }}
@@ -34,14 +37,9 @@ const AltForm = ({ bg, text }) => {
 					headers: { "Content-Type": "application/x-www-form-urlencoded" },
 					body: encode({ "form-name": "request_appointment_alt", ...values }),
 				})
-					.then((res) => {
-						if (res.status === 200) {
-							actions.setStatus({
-								sent: true,
-								msg: "Thanks! We'll get in touch with you soon!",
-							});
-							actions.resetForm();
-						}
+					.then(() => {
+						successClasses += " !block";
+						actions.resetForm();
 					})
 					.catch((err) => {
 						actions.setStatus({
@@ -51,7 +49,7 @@ const AltForm = ({ bg, text }) => {
 					})
 					.finally(() => actions.setSubmitting(false));
 			}}>
-			{({ status }) => (
+			{() => (
 				<Form
 					name='request_appointment_alt'
 					data-netlify='true'
@@ -59,16 +57,9 @@ const AltForm = ({ bg, text }) => {
 					<Field type='hidden' name='form-name' />
 					<Field type='hidden' name='bot-field' />
 
-					{status && status.msg && (
-						<div
-							className={`mr-6 my-4 p-2 text-sm ${
-								status.sent
-									? "bg-success-300 text-success-900"
-									: "bg-error-300 text-error-900"
-							}`}>
-							{status.msg}
-						</div>
-					)}
+					<div className={successClasses}>
+						Thank you! We'll get in touch with you soon.
+					</div>
 
 					<span className='flex flex-col basis-full max-w-full my-6 md:mb-0'>
 						<Field
