@@ -1,7 +1,7 @@
 import React from "react";
 
 import Layout from "../components/layout";
-import { SEO } from "../components/seo";
+import { Seo } from "../components/seo";
 import Tabs from "../components/tabs";
 
 const Team = () => {
@@ -76,7 +76,7 @@ const Team = () => {
 export default Team;
 
 export const Head = () => (
-	<SEO
+	<Seo
 		title='Our Team'
 		description='Meet the people behind R Wadhwa &amp; Associates'
 	/>

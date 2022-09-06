@@ -15,6 +15,10 @@ module.exports = {
 			gray: "#696969",
 			light_gray: "#ececec",
 			white: "#ffffff",
+			red: {
+				300: "#fca5a5",
+				900: "#7f1d1d",
+			},
 		},
 		fontFamily: {
 			sans: ["InterVariable", "sans-serif"],

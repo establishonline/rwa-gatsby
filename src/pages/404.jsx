@@ -1,7 +1,7 @@
 import * as React from "react";
 
 import Layout from "../components/layout";
-import { SEO } from "../components/seo";
+import { Seo } from "../components/seo";
 import ArrowButton from "../components/arrow-button";
 
 import NotFound from "../images/not-found.inline.svg";
@@ -37,5 +37,5 @@ const PageNotFound = () => {
 export default PageNotFound;
 
 export const Head = () => (
-	<SEO title='Page Not Found' description="Oops! We couldn't find that page!" />
+	<Seo title='Page Not Found' description="Oops! We couldn't find that page!" />
 );

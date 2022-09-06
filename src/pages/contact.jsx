@@ -1,7 +1,7 @@
 import React from "react";
 
 import Layout from "../components/layout";
-import { SEO } from "../components/seo";
+import { Seo } from "../components/seo";
 import Form from "../components/appointment-form";
 import Card from "../components/card";
 import ArrowButtonA from "../components/arrow-button-a";
@@ -95,7 +95,7 @@ const ContactPage = () => {
 export default ContactPage;
 
 export const Head = () => (
-	<SEO
+	<Seo
 		title='Contact Us'
 		description='Get in touch with us and we will figure out how best to help you'
 	/>

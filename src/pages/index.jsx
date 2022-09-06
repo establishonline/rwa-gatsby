@@ -5,7 +5,7 @@ import Hero from "../components/home-hero";
 import Services from "../components/home-services";
 import About from "../components/home-about";
 import Appointment from "../components/home-appointment";
-import { SEO } from "../components/seo";
+import { Seo } from "../components/seo";
 
 const IndexPage = () => {
 	return (
@@ -20,4 +20,4 @@ const IndexPage = () => {
 
 export default IndexPage;
 
-export const Head = () => <SEO />;
+export const Head = () => <Seo />;

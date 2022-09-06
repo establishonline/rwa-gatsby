@@ -1,7 +1,7 @@
 import React from "react";
 
 import Layout from "../components/layout";
-import { SEO } from "../components/seo";
+import { Seo } from "../components/seo";
 
 const PrivacyPolicy = () => {
 	return (
@@ -257,5 +257,5 @@ const PrivacyPolicy = () => {
 export default PrivacyPolicy;
 
 export const Head = () => (
-	<SEO title='Privacy Policy' description='Your privacy is important to us!' />
+	<Seo title='Privacy Policy' description='Your privacy is important to us!' />
 );

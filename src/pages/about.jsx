@@ -1,7 +1,7 @@
 import React from "react";
 
 import Layout from "../components/layout";
-import { SEO } from "../components/seo";
+import { Seo } from "../components/seo";
 import ArrowButton from "../components/arrow-button";
 
 const AboutPage = () => {
@@ -69,7 +69,7 @@ const AboutPage = () => {
 export default AboutPage;
 
 export const Head = () => (
-	<SEO
+	<Seo
 		title='About Us'
 		description='Learn about R Wadhwa &amp; Associates and what got them started'
 	/>

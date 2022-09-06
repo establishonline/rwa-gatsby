@@ -17,7 +17,7 @@ const Form = ({ bg, text }) => {
 				<div className='flex flex-col md:flex-row mt-4'>
 					<span className='flex flex-col basis-full max-w-full md:basis-6/12 md:max-w-6/12 mb-4 md:mb-0'>
 						<input
-							className={`border-b-2 border-solid border-${text} mr-6 bg-${bg}`}
+							className={`border-b-2 border-solid border-${text} mr-6 bg-${bg} text-${text}`}
 							type='text'
 							name='first_name'
 							id='first_name'
@@ -30,7 +30,7 @@ const Form = ({ bg, text }) => {
 					</span>
 					<span className='flex flex-col basis-full max-w-full md:basis-6/12 md:max-w-6/12'>
 						<input
-							className={`border-b-2 border-solid border-${text} mr-6 bg-${bg}`}
+							className={`border-b-2 border-solid border-${text} mr-6 bg-${bg} text-${text}`}
 							type='text'
 							name='last_name'
 							id='last_name'
@@ -45,7 +45,7 @@ const Form = ({ bg, text }) => {
 				<div className='flex flex-col md:flex-row mt-4'>
 					<span className='flex flex-col basis-full max-w-full md:basis-6/12 md:max-w-6/12 mb-4 md:mb-0'>
 						<input
-							className={`border-b-2 border-solid border-${text} mr-6 bg-${bg}`}
+							className={`border-b-2 border-solid border-${text} mr-6 bg-${bg} text-${text}`}
 							type='email'
 							name='email'
 							id='email'
@@ -56,7 +56,7 @@ const Form = ({ bg, text }) => {
 					</span>
 					<span className='flex flex-col basis-full max-w-full md:basis-6/12 md:max-w-6/12'>
 						<input
-							className={`border-b-2 border-solid border-${text} mr-6 bg-${bg}`}
+							className={`border-b-2 border-solid border-${text} mr-6 bg-${bg} text-${text}`}
 							type='tel'
 							name='phone'
 							id='phone'
@@ -69,7 +69,7 @@ const Form = ({ bg, text }) => {
 				<div className='flex flex-col md:flex-row mt-4'>
 					<span className='flex flex-col basis-full max-w-full'>
 						<textarea
-							className={`border-b-2 border-solid border-${text} mr-6 bg-${bg}`}
+							className={`border-b-2 border-solid border-${text} mr-6 bg-${bg} text-${text}`}
 							name='message'
 							id='message'
 						/>

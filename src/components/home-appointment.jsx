@@ -1,5 +1,5 @@
 import React from "react";
-import Form from "./appointment-form";
+import Form from "./appointment-form-alt";
 
 import Card from "./card";
 
