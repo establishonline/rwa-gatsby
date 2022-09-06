@@ -15,9 +15,13 @@ module.exports = {
 			gray: "#696969",
 			light_gray: "#ececec",
 			white: "#ffffff",
-			red: {
+			error: {
 				300: "#fca5a5",
 				900: "#7f1d1d",
+			},
+			success: {
+				300: "#86efac",
+				900: "#14532d",
 			},
 		},
 		fontFamily: {
