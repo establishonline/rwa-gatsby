@@ -65,7 +65,9 @@ const AltForm = ({ bg, text }) => {
 								status.sent
 									? "bg-success-300 text-success-900"
 									: "bg-error-300 text-error-900"
-							}`}></div>
+							}`}>
+							{status.msg}
+						</div>
 					)}
 
 					<span className='flex flex-col basis-full max-w-full my-6 md:mb-0'>
