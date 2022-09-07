@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const getItem = (key) => {
-	if (typeof document !== undefined) {
+	if (typeof document !== 'undefined') {
 		document.cookie.split(`; `).reduce((total, currentCookie) => {
 			const item = currentCookie.split(`=`);
 			const storedKey = item[0];
@@ -18,7 +18,7 @@ const setItem = (key, value, numberOfDays) => {
 	// set the time to be now + numberOfDays
 	now.setTime(now.getTime() + numberOfDays * 60 * 60 * 24 * 1000);
 
-	if (typeof document !== undefined) {
+	if (typeof document !== 'undefined') {
 		document.cookie = `${key}=${value}; expires=${now.toUTCString()}; path=/`;
 	}
 };
