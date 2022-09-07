@@ -4,7 +4,7 @@ import Layout from "../components/layout";
 import useCookie from "../hooks/useCookie";
 
 const DevTwo = () => {
-    const [cookie] = useCookie("username", false);
+    const [cookie] = useCookie("username", "abc");
 
 	return (
 		<Layout>
