@@ -16,12 +16,8 @@ const PageNotFound = () => {
 				<div className='row'>
 					<div className='basis-full max-w-full shrink-0 px-4 text-center'>
 						<h1 className='text-9xl font-bold pt-4 pb-8'>404</h1>
-						<h2 className='text-3xl font-bold pb-2'>
-							Uh oh! I think you're lost.
-						</h2>
-						<p className='text-xl'>
-							it looks like the page you're looking for doesn't exist
-						</p>
+						<h2 className='text-3xl font-bold pb-2'>Uh oh! I think you're lost.</h2>
+						<p className='text-xl'>it looks like the page you're looking for doesn't exist</p>
 						<ArrowButton
 							to='/'
 							content='Go back home'
@@ -37,5 +33,8 @@ const PageNotFound = () => {
 export default PageNotFound;
 
 export const Head = () => (
-	<Seo title='Page Not Found' description="Oops! We couldn't find that page!" />
+	<Seo
+		title='Page Not Found'
+		description="Oops! We couldn't find that page!"
+	/>
 );

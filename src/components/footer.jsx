@@ -60,8 +60,7 @@ const Footer = () => {
 							</div>
 							<div className='py-4 flex flex-col md:flex-row gap-y-4 md:gap-y-0 items-center justify-between'>
 								<p className='text-xs font-bold'>
-									Copyright &copy; R. Wadhwa Associates |{" "}
-									<Link to='/privacy-policy'>Privacy Policy</Link>
+									Copyright &copy; R. Wadhwa Associates | <Link to='/privacy-policy'>Privacy Policy</Link>
 								</p>
 								<p className='text-xs font-bold'>
 									Designed &amp; Developed by{" "}

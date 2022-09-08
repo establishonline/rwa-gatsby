@@ -11,17 +11,12 @@ const HomeAbout = () => {
 			<div className='container'>
 				<div className='row justify-evenly'>
 					<div className='basis-full max-w-full lg:basis-5/12 lg:max-w-5/12 shrink-0 mb-16 lg:mb-0 px-4'>
-						<Card color='white' radius='tl'>
+						<Card
+							color='white'
+							radius='tl'>
 							<WhoWeAre className='m-auto max-w-[200px] w-full' />
-							<h2 className='text-center text-green text-2xl font-bold mt-8 mx-2 mb-4'>
-								Who We Are
-							</h2>
-							<p className='text-center'>
-								R. Wadhwa &amp; Associates is one of the leading Chartered
-								Accountancy firms specializing in Financial &amp; Tax Advisory.
-								The firm also provides a gamut of services like accounting,
-								auditing, financial services and much more.
-							</p>
+							<h2 className='text-center text-green text-2xl font-bold mt-8 mx-2 mb-4'>Who We Are</h2>
+							<p className='text-center'>R. Wadhwa &amp; Associates is one of the leading Chartered Accountancy firms specializing in Financial &amp; Tax Advisory. The firm also provides a gamut of services like accounting, auditing, financial services and much more.</p>
 							<div className='text-right'>
 								<ArrowButton
 									to='/about/'
@@ -32,17 +27,12 @@ const HomeAbout = () => {
 						</Card>
 					</div>
 					<div className='basis-full max-w-full lg:basis-5/12 lg:max-w-5/12 shrink-0 px-4'>
-						<Card color='white' radius='br'>
+						<Card
+							color='white'
+							radius='br'>
 							<OurTeam className='m-auto max-w-[200px] w-full' />
-							<h2 className='text-center text-green text-2xl font-bold mt-8 mx-2 mb-4'>
-								Our Team
-							</h2>
-							<p className='text-center'>
-								The unique professional background of the team at R. Wadhwa
-								&amp; Associates helps us to approach problems in innovative
-								ways and make sure to handle all matters in a prompt and
-								effective manner.
-							</p>
+							<h2 className='text-center text-green text-2xl font-bold mt-8 mx-2 mb-4'>Our Team</h2>
+							<p className='text-center'>The unique professional background of the team at R. Wadhwa &amp; Associates helps us to approach problems in innovative ways and make sure to handle all matters promptly and effectively.</p>
 							<div className='text-right'>
 								<ArrowButton
 									to='/our-team/'

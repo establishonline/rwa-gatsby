@@ -10,22 +10,14 @@ const encode = (data) => {
 };
 
 const FormSchema = Yup.object().shape({
-	fullName: Yup.string()
-		.min(2, "Must be at least 2 characters")
-		.max(50, "Must be no longer than 50 characters")
-		.required("Full Name is required"),
-	email: Yup.string()
-		.email("Enter a valid email address")
-		.required("Email is required"),
-	phone: Yup.string()
-		.phone("IN", false, "Enter a valid phone number")
-		.required("Phone number is required"),
+	fullName: Yup.string().min(2, "Must be at least 2 characters").max(50, "Must be no longer than 50 characters").required("Full Name is required"),
+	email: Yup.string().email("Enter a valid email address").required("Email is required"),
+	phone: Yup.string().phone("IN", false, "Enter a valid phone number").required("Phone number is required"),
 	message: Yup.string().notRequired(),
 });
 
 const AppointmentForm = ({ bg, text }) => {
-	let successClasses =
-		"mr-6 my-4 p-4 bg-success-100 text-success-900 rounded-tl-2xl rounded-br-2xl hidden";
+	let successClasses = "mr-6 my-4 p-4 bg-success-100 text-success-900 rounded-tl-2xl rounded-br-2xl hidden";
 
 	return (
 		<Formik
@@ -54,12 +46,16 @@ const AppointmentForm = ({ bg, text }) => {
 					name='Request Appointment'
 					data-netlify='true'
 					data-netlify-honeypot='bot-field'>
-					<Field type='hidden' name='form-name' />
-					<Field type='hidden' name='bot-field' />
+					<Field
+						type='hidden'
+						name='form-name'
+					/>
+					<Field
+						type='hidden'
+						name='bot-field'
+					/>
 
-					<div className={successClasses}>
-						Thank you! We'll get in touch with you soon.
-					</div>
+					<div className={successClasses}>Thank you! We'll get in touch with you soon.</div>
 
 					<span className='flex flex-col basis-full max-w-full my-6 md:mb-0'>
 						<Field
@@ -84,7 +80,9 @@ const AppointmentForm = ({ bg, text }) => {
 							type='email'
 							className={`border-b-2 border-solid border-${text} mr-6 bg-${bg} text-${text}`}
 						/>
-						<label className={`font-bold text-${text} text-sm`} htmlFor='email'>
+						<label
+							className={`font-bold text-${text} text-sm`}
+							htmlFor='email'>
 							Email
 						</label>
 						<ErrorMessage
@@ -99,7 +97,9 @@ const AppointmentForm = ({ bg, text }) => {
 							name='phone'
 							className={`border-b-2 border-solid border-${text} mr-6 bg-${bg} text-${text}`}
 						/>
-						<label className={`font-bold text-${text} text-sm`} htmlFor='phone'>
+						<label
+							className={`font-bold text-${text} text-sm`}
+							htmlFor='phone'>
 							Phone
 						</label>
 						<ErrorMessage

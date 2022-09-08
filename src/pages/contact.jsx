@@ -13,10 +13,11 @@ const ContactPage = () => {
 				<div className='container'>
 					<div className='row justify-center'>
 						<div className='py-12 pl-12 pr-8 md:pl-0 md:pr-0 basis-full max-w-full shrink-0 md:basis-8/12 md:max-w-8/12 lg:basis-5/12 lg:max-w-5/12'>
-							<h2 className='text-3xl text-center text-white font-bold mb-8'>
-								Request an Appointment
-							</h2>
-							<Form bg='black' text='white' />
+							<h2 className='text-3xl text-center text-white font-bold mb-8'>Request an Appointment</h2>
+							<Form
+								bg='black'
+								text='white'
+							/>
 						</div>
 					</div>
 				</div>
@@ -25,15 +26,13 @@ const ContactPage = () => {
 				<div className='container'>
 					<div className='row justify-evenly'>
 						<div className='basis-full max-w-full px-4 lg:basis-5/12 lg:max-w-5/12 shrink-0 mb-16 lg:mb-0'>
-							<Card color='white' radius='tl'>
-								<h2 className='text-blue text-2xl font-bold mt-8 mr-2 mb-4'>
-									Visit Us
-								</h2>
+							<Card
+								color='white'
+								radius='tl'>
+								<h2 className='text-blue text-2xl font-bold mt-8 mr-2 mb-4'>Visit Us</h2>
 								<div className='mb-6'>
 									<h4 className='font-bold'>Gurgaon Office:</h4>
-									<p>
-										G19/3, First Floor, DLF Phase 1, Gurgaon, Haryana - 122002
-									</p>
+									<p>G19/3, First Floor, DLF Phase 1, Gurgaon, Haryana - 122002</p>
 									<ArrowButtonA
 										to='https://goo.gl/maps/Df2JJoYUB9VBfQbHA'
 										content='Get Directions'
@@ -58,10 +57,10 @@ const ContactPage = () => {
 							</Card>
 						</div>
 						<div className='basis-full max-w-full px-4 lg:basis-5/12 lg:max-w-5/12 shrink-0'>
-							<Card color='white' radius='br'>
-								<h2 className='text-blue text-2xl font-bold mt-8 mr-2 mb-4'>
-									Call Us
-								</h2>
+							<Card
+								color='white'
+								radius='br'>
+								<h2 className='text-blue text-2xl font-bold mt-8 mr-2 mb-4'>Call Us</h2>
 								<div className='mb-6'>
 									<a
 										href='tel:01243545837'

@@ -42,10 +42,7 @@ class Header extends Component {
 									onClick={this.toggleClass}
 								/>
 							</div>
-							<nav
-								className={`block fixed lg:relative top-0 -right-full lg:right-0 h-full lg:h-auto w-80 lg:w-auto bg-white lg:duration-[0ms] transition-[right] shadow-[0_0_10px_0_rgba(105,105,105,1)] lg:shadow-none ${
-									this.state.isActive ? "right-0 duration-500" : ""
-								}`}>
+							<nav className={`block fixed lg:relative top-0 -right-full lg:right-0 h-full lg:h-auto w-80 lg:w-auto bg-white lg:duration-[0ms] transition-[right] shadow-[0_0_10px_0_rgba(105,105,105,1)] lg:shadow-none ${this.state.isActive ? "right-0 duration-500" : ""}`}>
 								<div className='flex justify-end p-4 lg:hidden pointer'>
 									<CloseButton
 										className='w-8 h-8 fill-green'

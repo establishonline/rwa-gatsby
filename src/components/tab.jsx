@@ -25,15 +25,17 @@ class Tab extends Component {
 			props: { activeTab, label },
 		} = this;
 
-		let className =
-			"py-4 lg:py-6 px-6 lg:px-4 border-t-4 lg:border-t-0 lg:border-l-4 border-gray text-gray text-xl font-bold cursor-pointer whitespace-nowrap lg:whitespace-normal";
+		let className = "py-4 lg:py-6 px-6 lg:px-4 border-t-4 lg:border-t-0 lg:border-l-4 border-gray text-gray text-xl font-bold cursor-pointer whitespace-nowrap lg:whitespace-normal";
 
 		if (activeTab === label) {
 			className += " tab-active";
 		}
 
 		return (
-			<li className={className} onClick={onClick} onKeyDown={onKeyDown}>
+			<li
+				className={className}
+				onClick={onClick}
+				onKeyDown={onKeyDown}>
 				{label}
 			</li>
 		);
