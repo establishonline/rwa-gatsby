@@ -21,11 +21,11 @@ class Blog extends React.Component {
 
 		return (
 			<Layout>
-				<section className='pb-16 px-8 rounded-tr-10xl'>
+				<section className='py-16 px-8 rounded-tr-10xl'>
 					<div className='container'>
 						<div className='row'>
 							<div className='basis-full max-w-full shrink-0 px-4 pt-16 pb-12'>
-								<h2 className='text-4xl lg:text-5xl font-bold text-blue leading-tight'>From our Blog</h2>
+								<h2 className='text-4xl mb-4 lg:text-5xl font-bold text-blue leading-tight'>From our Blog</h2>
 							</div>
 						</div>
 						<div className='row gap-y-8'>
@@ -45,12 +45,12 @@ class Blog extends React.Component {
 													<div className='text-gray/75 text-xs'>{node.createdAt}</div>
 													<Link
 														className='text-xl font-bold'
-														to={`/${node.slug}/`}>
+														to={`/blog/${node.slug}/`}>
 														{node.title}
 													</Link>
 												</div>
 												<ArrowButton
-													to={`/${node.slug}/`}
+													to={`/blog/${node.slug}/`}
 													content='Read The Post'
 													buttonClasses='mr-4'
 													size='sm'
