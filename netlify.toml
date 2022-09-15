@@ -1,0 +1,12 @@
+[[headers]]
+  # Define which paths this specific [[headers]] block will cover.
+  for = "/*"
+
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "no-referrer"
+    Strict-Transport-Security = "max-age=31536000; includeSubdomains; preload"
+    Content-Security-Policy = "default-src 'self' data: 'unsafe-inline'; script-src 'self' data: 'unsafe-inline'; style-src 'self' data: 'unsafe-inline'; img-src 'self' data: https://images.ctfassets.net; font-src 'self' data:; media-src 'self'; frame-src 'self'; upgrade-insecure-requests; block-all-mixed-content"
+    Permissions-Policy= "clipboard-read=(), clipboard-write=()"
