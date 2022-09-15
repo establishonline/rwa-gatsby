@@ -34,7 +34,7 @@ const ContactPage = () => {
 									<h4 className='font-bold'>Gurgaon Office:</h4>
 									<p>G19/3, First Floor, DLF Phase 1, Gurgaon, Haryana - 122002</p>
 									<ArrowButtonA
-										to='https://goo.gl/maps/Df2JJoYUB9VBfQbHA'
+										to='https://goo.gl/maps/51u4j43NLpo1ztet6'
 										content='Get Directions'
 									/>
 								</div>
