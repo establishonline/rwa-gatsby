@@ -26,8 +26,6 @@ class Blog extends React.Component {
 						<div className='row'>
 							<div className='basis-full max-w-full shrink-0 px-4 pt-16 pb-12'>
 								<h2 className='text-4xl lg:text-5xl font-bold text-blue leading-tight'>From our Blog</h2>
-								<p>{currentPage}</p>
-								<p>{(currentPage - 1).toString()}</p>
 							</div>
 						</div>
 						<div className='row gap-y-8'>
