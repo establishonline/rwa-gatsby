@@ -21,7 +21,7 @@ const HomeServices = () => {
 					<div label='Litigation'>
 						<h3 className='text-2xl font-bold'>Litigation</h3>
 						<p>R. Wadhwa &amp; Associates provides litigation services in all practice areas. Our firm appears in personal hearings, appeals to the Commissioner, appeals to CESTAT (Tribunal), and tax appeals in High Courts.</p>
-						<p>At R. Wadhwa &amp; Associates, we gather evidence on record with alternative options, conduct extensive research, analyse facts and deploy strategies to consolidate our clients' legal, comprehensive, foolproof, and watertight legal strategies.</p>
+						<p>At R. Wadhwa &amp; Associates, we gather evidence on record with alternative options, conduct extensive research, analyse facts and deploy strategies to consolidate our clients' foolproof, comprehensive, and watertight legal strategies.</p>
 						<p>The unique professional background of the team at R. Wadhwa &amp; Associates helps us to approach problems in innovative ways and put forth exemplary arguments to handle litigations.</p>
 					</div>
 					<div label='Advisory'>

@@ -19,7 +19,7 @@ const Footer = () => {
 						<div className='w-full'>
 							<div className='border-b-2 border-black border-solid'>
 								<nav className='py-4 flex md:block justify-center md:justify-start'>
-									<ul className='flex flex-col md:flex-row p-4 md:p-0 gap-y-4 md:gap-x-8'>
+									<ul className='flex flex-col text-center md:flex-row p-4 md:p-0 gap-y-4 md:gap-x-8'>
 										<li>
 											<Link
 												className='font-semibold text-gray hover:text-green duration-500 md:text-sm lg:text-base'
